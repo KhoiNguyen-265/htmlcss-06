@@ -281,3 +281,84 @@ a {
     left: 333px;
     bottom: -40px;
 }
+
+/* Company */
+.company {
+    padding: 110px 0 67px;
+}
+
+.company__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 105px;
+}
+
+.company__heading {
+    position: relative;
+    margin-left: 100px;
+    max-width: 253px;
+    color: var(--heading-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+}
+
+.company__heading::before {
+    position: absolute;
+    left: -100px;
+    top: 22px;
+    content: "";
+    width: 86px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.company__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px 40px;
+}
+
+.company-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.company-item__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.company-item:nth-child(2) .company-item__icon-wrap {
+    background: #fbfaff;
+}
+
+.company-item:nth-child(3) .company-item__icon-wrap {
+    background: #fee101;
+}
+
+.company-item:nth-child(4) .company-item__icon-wrap {
+    background: #ff0000;
+}
+
+.company-item:nth-child(5) .company-item__icon-wrap {
+    background: #14a800;
+}
+
+.company-item:nth-child(7) .company-item__icon-wrap {
+    background: #7f54b3;
+}
+
+.company-item__label {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    letter-spacing: -1px;
+}
