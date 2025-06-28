@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #5d3bee;
+    --heading-color: #080415;
+    --text-color: #51586a;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -12,4 +18,116 @@ html {
 body {
     font-family: "DM Sans", sans-serif;
     font-size: 1.6rem;
+}
+
+/* Common */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    background: #fbfaff;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1330px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.contact-badge {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.contact-badge__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgb(93, 59, 238, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-badge:hover .contact-badge__icon-wrap {
+    border-color: var(--primary-color);
+}
+
+.contact-badge__email {
+    position: relative;
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36; /* 136.364% */
+}
+
+.contact-badge__email::after {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+    background: var(--heading-color);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.contact-badge:hover .contact-badge__email::after {
+    width: 100%;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar-item__link {
+    position: relative;
+    padding: 16px 22px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.navbar-item__link::after,
+.navbar-item__link--active::after {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background: var(--primary-color);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.navbar-item__link:hover,
+.navbar-item__link--active {
+    color: var(--primary-color);
+    text-shadow: 1px 0 0 var(--primary-color);
+}
+
+.navbar-item__link:hover::after,
+.navbar-item__link--active::after {
+    width: calc(100% - 44px);
 }
