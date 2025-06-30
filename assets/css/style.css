@@ -510,7 +510,7 @@ a {
 
 /* About */
 .about {
-    padding: 140px 0 75px;
+    padding-top: 140px;
 }
 
 .about-label {
@@ -596,6 +596,7 @@ a {
 }
 
 .about__img {
+    display: block;
     width: 100%;
     height: 628px;
     object-fit: cover;
@@ -632,4 +633,125 @@ a {
     font-weight: 700;
     line-height: 1.67;
     cursor: pointer;
+}
+
+/* Review */
+.review {
+    margin-top: -323px;
+    padding: 473px 0 75px;
+    background: #fbfaff;
+}
+
+.review__heading {
+    text-align: center;
+}
+
+.review__desc {
+    max-width: 570px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.review__list {
+    display: flex;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.review-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.review-item__quote {
+    max-width: 679px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 1.67;
+}
+
+.review-item__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.review-item__info {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.review-item__avt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f29764;
+    overflow: hidden;
+}
+
+.review-item__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.review-item__name {
+    color: var(--heading-color);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.33;
+}
+
+.review-item__desc {
+    margin-top: 3px;
+    color: #51586a;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.81;
+}
+
+.review__controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.review__dot-inner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgb(8, 4, 21, 0.2);
+    transition: 0.3s;
+}
+
+.review__dot-inner:hover {
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.review__dot--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+.review__dot--active .review__dot-inner {
+    cursor: default;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
 }
