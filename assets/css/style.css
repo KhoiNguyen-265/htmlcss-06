@@ -920,3 +920,46 @@ a {
 .gallery-item__img:hover {
     transform: scale(1.2);
 }
+
+/* Call to action */
+.cta__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fbfaff;
+    padding: 68px 0;
+}
+
+.cta__heading {
+    margin-top: 15px;
+}
+
+.cta__desc {
+    max-width: 570px;
+    text-align: center;
+}
+
+.cta__btn {
+    margin-top: 30px;
+}
+
+.cta__deco {
+    position: absolute;
+}
+
+.cta__deco-01 {
+    left: 0;
+    bottom: 0;
+}
+
+.cta__deco-02 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta__deco-03 {
+    top: 0;
+    right: 0;
+}
