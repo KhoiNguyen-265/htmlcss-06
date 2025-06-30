@@ -1,9 +1,17 @@
 <svg width="409" height="234" viewBox="0 0 409 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
 <g opacity="0.1">
-<rect width="63.715" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 69.6201 108.414)" fill="#5D3BEE"/>
-<rect width="168.404" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 204.671 235.937)" fill="#5D3BEE"/>
-<rect width="423.652" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 339.409 279.314)" fill="#5D3BEE"/>
-<rect width="157.968" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 240.183 102.142)" fill="#5D3BEE"/>
-<rect width="157.968" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 442.827 299.383)" fill="#5D3BEE"/>
+<rect width="63.715" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 69.625 108.416)" fill="#5D3BEE"/>
+<rect width="168.404" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 204.68 235.938)" fill="#5D3BEE"/>
+<rect width="423.652" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 339.418 279.315)" fill="#5D3BEE"/>
+<rect width="157.968" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 240.191 102.144)" fill="#5D3BEE"/>
+<rect width="157.968" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 442.832 299.384)" fill="#5D3BEE"/>
+</g>
+<g opacity="0.1">
+<rect width="63.715" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 233.625 90.4124)" fill="#5D3BEE"/>
+<rect width="168.404" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 368.68 217.935)" fill="#5D3BEE"/>
+<rect width="423.652" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 503.418 261.312)" fill="#5D3BEE"/>
+<rect width="157.968" height="37.1214" rx="18.5607" transform="matrix(-0.720068 -0.693903 0.7198 -0.694182 404.191 84.1409)" fill="#5D3BEE"/>
+</g>
 </g>
 </svg>
