@@ -97,6 +97,13 @@
         <!-- Grid CSS -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
 
+        <!-- Animation -->
+        <link rel="stylesheet" href="./assets/css/animation.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -280,7 +287,7 @@
                         <div class="hero__inner">
                             <!-- Hero Media -->
                             <div class="hero__media">
-                                <div class="hero__img-wrap">
+                                <div class="hero__img-wrap" data-aos="zoom-in">
                                     <img
                                         src="./assets/img/hero__img-01.png"
                                         alt=""
@@ -296,21 +303,34 @@
 
                             <!-- Hero Content -->
                             <div class="hero__content">
-                                <h1 class="hero__heading">
+                                <h1 class="hero__heading" data-aos="fade-down">
                                     An Interactive Designer
                                 </h1>
-                                <p class="section-desc hero__desc center">
+                                <p
+                                    class="section-desc hero__desc center"
+                                    data-aos="fade-left"
+                                >
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
                                 </p>
                                 <div class="hero__cta">
-                                    <a href="#!" class="btn">Book a Call</a>
-                                    <a href="#!" class="hero__my-works">
+                                    <a
+                                        href="#!"
+                                        class="btn ripplePrimary"
+                                        data-aos="fade-up-right"
+                                    >
+                                        Book a Call
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="hero__my-works"
+                                        data-aos="fade-up-left"
+                                    >
                                         My Works
                                     </a>
                                 </div>
-                                <div class="hero__footer">
+                                <div class="hero__footer" data-aos="fade-up">
                                     <p class="hero__follow">Follow me on:</p>
                                     <div class="hero__socials">
                                         <div class="hero__social-wrap">
@@ -346,10 +366,16 @@
             <section class="company">
                 <div class="container">
                     <div class="company__inner">
-                        <h2 class="company__heading">Meet my recent clients</h2>
+                        <h2 class="company__heading" data-aos="fade-right">
+                            Meet my recent clients
+                        </h2>
                         <div class="company__list">
                             <!-- Item 1 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/google.svg"
@@ -361,7 +387,11 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="600"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/warner-bros.svg"
@@ -373,7 +403,11 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="800"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/mailchimp.svg"
@@ -385,7 +419,11 @@
                             </div>
 
                             <!-- Item 4 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="1000"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/adobe.svg"
@@ -397,7 +435,11 @@
                             </div>
 
                             <!-- Item 5 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="1200"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/upwork.svg"
@@ -409,7 +451,11 @@
                             </div>
 
                             <!-- Item 6 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="1400"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/cloud.svg"
@@ -423,7 +469,11 @@
                             </div>
 
                             <!-- Item 7 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="1600"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/woo.svg"
@@ -435,7 +485,11 @@
                             </div>
 
                             <!-- Item 8 -->
-                            <div class="company-item">
+                            <div
+                                class="company-item"
+                                data-aos="fade-up"
+                                data-aos-delay="1800"
+                            >
                                 <div class="company-item__icon-wrap">
                                     <img
                                         src="./assets/icon/cannva.svg"
@@ -454,20 +508,27 @@
             <section id="service" class="service">
                 <div class="container">
                     <div class="service__inner">
-                        <h2 class="section-heading service__heading">
+                        <h2
+                            class="section-heading service__heading"
+                            data-aos="fade-up"
+                        >
                             Specialities
                         </h2>
-                        <p class="section-desc service__desc">
+                        <p
+                            class="section-desc service__desc"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        >
                             Discover our core strengths that bring your ideas to
                             life through thoughtful and innovative design
                             solutions.
                         </p>
-                        ``
+                        <!-- Service List -->
                         <div
                             class="service__list row row-cols-lg-3 row-cols-1 no-wrap"
                         >
                             <!-- Card item 1 -->
-                            <div class="col">
+                            <div class="col" data-aos="zoom-in-right">
                                 <div class="service-item">
                                     <div class="service-item__img-wrap">
                                         <a href="#!">
@@ -494,7 +555,7 @@
                             </div>
 
                             <!-- Card item 2 -->
-                            <div class="col">
+                            <div class="col" data-aos="zoom-in-up">
                                 <div class="service-item">
                                     <div class="service-item__img-wrap">
                                         <a href="#!">
@@ -521,7 +582,7 @@
                             </div>
 
                             <!-- Card item 3 -->
-                            <div class="col">
+                            <div class="col" data-aos="zoom-in-left">
                                 <div class="service-item">
                                     <div class="service-item__img-wrap">
                                         <a href="#!">
@@ -566,10 +627,16 @@
                 <div class="container">
                     <div class="project__inner">
                         <div class="project__row">
-                            <h2 class="section-heading project__heading">
+                            <h2
+                                class="section-heading project__heading"
+                                data-aos="fade-right"
+                            >
                                 Take a look at <br />my recent projects
                             </h2>
-                            <p class="section-desc project__desc">
+                            <p
+                                class="section-desc project__desc"
+                                data-aos="fade-left"
+                            >
                                 Explore a curated selection of my latest design
                                 and development projects — each crafted with a
                                 focus on usability, clean UI.
@@ -578,7 +645,7 @@
                         <div class="project__list">
                             <div class="row row-cols-lg-2 row-cols-1">
                                 <!-- Project item 1 -->
-                                <div class="col">
+                                <div class="col" data-aos="fade-up">
                                     <div class="project-item">
                                         <div class="project-item__info">
                                             <h3>
@@ -621,7 +688,7 @@
                                 </div>
 
                                 <!-- Project item 2 -->
-                                <div class="col">
+                                <div class="col" data-aos="fade-down">
                                     <div class="project-item">
                                         <div class="project-item__info">
                                             <h3>
@@ -664,7 +731,7 @@
                                 </div>
 
                                 <!-- Project item 3 -->
-                                <div class="col">
+                                <div class="col" data-aos="fade-up-right">
                                     <div class="project-item">
                                         <div class="project-item__info">
                                             <h3>
@@ -706,7 +773,7 @@
                                 </div>
 
                                 <!-- Project item 4 -->
-                                <div class="col">
+                                <div class="col" data-aos="fade-up-left">
                                     <div class="project-item">
                                         <div class="project-item__info">
                                             <h3>
@@ -748,7 +815,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project__all">
+                        <div class="project__all" data-aos="fade-up">
                             <button class="btn project__btn">
                                 All Projects
                             </button>
@@ -764,7 +831,7 @@
                         <!-- Content -->
                         <div class="about__content">
                             <div class="about-label">
-                                <p class="about-label__desc">
+                                <p class="about-label__desc" data-aos="fade-in">
                                     Hey,,,,It’s Arif
                                 </p>
                                 <img
@@ -773,10 +840,18 @@
                                     class="about-label__icon"
                                 />
                             </div>
-                            <h2 class="section-heading about__heading">
+                            <h2
+                                class="section-heading about__heading"
+                                data-aos="fade-down"
+                                data-aos-delay="300"
+                            >
                                 Interactive Designer
                             </h2>
-                            <p class="section-desc about__desc">
+                            <p
+                                class="section-desc about__desc"
+                                data-aos="fade-up"
+                                data-aos-delay="600"
+                            >
                                 I craft engaging digital experiences through
                                 thoughtful design and interactive elements that
                                 inspire users.
@@ -786,7 +861,7 @@
                         <!-- Stats -->
                         <div class="about__list">
                             <!-- Item 1 -->
-                            <div class="about-item">
+                            <div class="about-item" data-aos="fade-up-right">
                                 <div class="about-item__stats">
                                     <strong>08+</strong>
                                 </div>
@@ -794,7 +869,7 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="about-item">
+                            <div class="about-item" data-aos="fade-up">
                                 <div class="about-item__stats">
                                     <strong>21+</strong>
                                 </div>
@@ -804,7 +879,7 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="about-item">
+                            <div class="about-item" data-aos="fade-up-left">
                                 <div class="about-item__stats">
                                     <strong>97%</strong>
                                 </div>
@@ -813,7 +888,7 @@
                         </div>
 
                         <!-- Video -->
-                        <div class="about__video">
+                        <div class="about__video" data-aos="zoom-in">
                             <img
                                 src="./assets/img/about__img.png"
                                 alt=""
@@ -845,10 +920,13 @@
             <section class="review">
                 <div class="container">
                     <div class="review__inner">
-                        <h2 class="section-heading review__heading">
+                        <h2
+                            class="section-heading review__heading"
+                            data-aos="fade-down"
+                        >
                             What people says
                         </h2>
-                        <p class="section-desc review__desc">
+                        <p class="section-desc review__desc" data-aos="fade-up">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
@@ -856,13 +934,20 @@
                         <div class="review__list">
                             <!-- Review item 1 -->
                             <div class="review-item">
-                                <blockquote class="review-item__quote">
+                                <blockquote
+                                    class="review-item__quote"
+                                    data-aos="fade-down"
+                                    data-aos-delay="200"
+                                >
                                     “Duis aute irure dolor in reprehenderit in
                                     voluptate velit esse cillum dolore eu fugiat
                                     nulla pariatur. Excepteur sint occaecat
                                     cupidatat non proident, sunt in culpa.”
                                 </blockquote>
-                                <div class="review-item__body">
+                                <div
+                                    class="review-item__body"
+                                    data-aos="fade-up"
+                                >
                                     <div class="review-item__info">
                                         <div class="review-item__avt">
                                             <img
@@ -1013,12 +1098,15 @@
             <!--  Frequently Asked Questions -->
             <section id="journey" class="faq">
                 <div class="container">
-                    <h2 class="section-heading faq__heading">
+                    <h2
+                        class="section-heading faq__heading"
+                        data-aos="fade-down"
+                    >
                         A few questions clients normally ask me
                     </h2>
                     <div class="faq__list">
                         <!-- FAQ item 1 -->
-                        <div class="faq-item">
+                        <div class="faq-item" data-aos="fade-right">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
                                     <label for="question-1">
@@ -1047,7 +1135,7 @@
                         </div>
 
                         <!-- FAQ item 2 -->
-                        <div class="faq-item">
+                        <div class="faq-item" data-aos="fade-right">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
                                     <label for="question-2">
@@ -1076,7 +1164,7 @@
                         </div>
 
                         <!-- FAQ item 3 -->
-                        <div class="faq-item">
+                        <div class="faq-item" data-aos="fade-right">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
                                     <label for="question-3">
@@ -1105,7 +1193,7 @@
                         </div>
 
                         <!-- FAQ item 4 -->
-                        <div class="faq-item">
+                        <div class="faq-item" data-aos="fade-right">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
                                     <label for="question-4">
@@ -1134,7 +1222,7 @@
                         </div>
 
                         <!-- FAQ item 5 -->
-                        <div class="faq-item">
+                        <div class="faq-item" data-aos="fade-right">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
                                     <label for="question-5">
@@ -1169,32 +1257,49 @@
             <section class="gallery">
                 <div class="container">
                     <div class="gallery__inner">
-                        <h2 class="section-heading gallery__heading">
+                        <h2
+                            class="section-heading gallery__heading"
+                            data-aos="fade-down"
+                        >
                             My atmosphere
                         </h2>
-                        <p class="section-desc gallery__desc">
+                        <p
+                            class="section-desc gallery__desc"
+                            data-aos="fade-up"
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
                         </p>
-                        <a href="#!" class="gallery__tag">@interaction_arif</a>
+                        <a
+                            href="#!"
+                            class="gallery__tag"
+                            data-aos="fade-up-right"
+                            >@interaction_arif</a
+                        >
                         <div class="gallery__list">
                             <div class="row row-cols-lg-3 row-cols-1 no-wrap">
-                                <div class="gallery-item">
+                                <div
+                                    class="gallery-item"
+                                    data-aos="fade-up-right"
+                                >
                                     <img
                                         src="./assets/img/gallery__img-01.png"
                                         alt=""
                                         class="gallery-item__img"
                                     />
                                 </div>
-                                <div class="gallery-item">
+                                <div class="gallery-item" data-aos="fade-up">
                                     <img
                                         src="./assets/img/gallery__img-02.png"
                                         alt=""
                                         class="gallery-item__img"
                                     />
                                 </div>
-                                <div class="gallery-item">
+                                <div
+                                    class="gallery-item"
+                                    data-aos="fade-up-left"
+                                >
                                     <img
                                         src="./assets/img/gallery__img-03.png"
                                         alt=""
@@ -1229,22 +1334,30 @@
             <section class="cta">
                 <div class="container">
                     <div class="cta__inner">
-                        <div class="cta__emote">
+                        <div class="cta__emote" data-aos="fade-up">
                             <img
                                 src="./assets/icon/cta__icon.svg"
                                 alt=""
                                 class="cta__emote-icon"
                             />
                         </div>
-                        <h2 class="section-heading cta__heading">
+                        <h2
+                            class="section-heading cta__heading"
+                            data-aos="fade-right"
+                        >
                             Got a project? Let’s talk
                         </h2>
-                        <p class="section-desc cta__desc">
+                        <p class="section-desc cta__desc" data-aos="fade-left">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
                         </p>
-                        <a href="#!" class="btn cta__btn">Book a Call</a>
+                        <a
+                            href="#!"
+                            class="btn cta__btn ripplePrimary"
+                            data-aos="fade-down"
+                            >Book a Call</a
+                        >
                         <img
                             src="./assets/icon/cta__deco-01.svg"
                             alt=""
@@ -1347,5 +1460,13 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                anchorPlacement: "top-center",
+            });
+        </script>
     </body>
 </html>

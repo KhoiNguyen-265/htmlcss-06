@@ -77,8 +77,9 @@ a {
     overflow: hidden;
 }
 
-.hide-on-pc {
-    display: none;
+.ripplePrimary.aos-animate {
+    animation: ripplePrimary 3s infinite;
+    animation-delay: 1s;
 }
 
 /* Header */
@@ -521,6 +522,7 @@ a {
 .project__btn {
     color: var(--heading-color);
     background: #fff;
+    animation: rippleWhite 3s infinite;
 }
 
 /* About */
