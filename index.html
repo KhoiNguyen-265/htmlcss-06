@@ -97,14 +97,14 @@
         <!-- Grid CSS -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
 
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="./assets/css/responsive.css" />
-
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- PC Header -->
         <header class="header fixed">
             <div class="inner">
                 <!-- Contact Badge -->
@@ -125,7 +125,7 @@
                 </div>
 
                 <!-- Logo -->
-                <a href="/">
+                <a href="#">
                     <img src="./assets/icon/logo.svg" alt="Portfolio" />
                 </a>
 
@@ -160,10 +160,121 @@
             </div>
         </header>
 
+        <!-- Mobile/Tablet Header -->
+        <header class="mobile-header fixed">
+            <div class="mobile-header__inner">
+                <!-- Logo -->
+                <a href="#!">
+                    <img src="./assets/icon/logo-mobile.svg" alt="" />
+                </a>
+
+                <!-- Control -->
+                <div class="mobile-header__control">
+                    <!-- Letter -->
+                    <div class="contact-badge__icon-wrap">
+                        <a
+                            class="contact-badge__icon"
+                            href="mailto:hi@arif.interactive"
+                        >
+                            <img src="./assets/icon/letter-mobile.svg" alt="" />
+                        </a>
+                    </div>
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="menu-checkbox"
+                        class="menu-checkbox"
+                        hidden
+                    />
+                    <!-- Menu -->
+                    <div class="menu__icon-wrap">
+                        <label class="menu__icon" for="menu-checkbox"
+                            ><svg
+                                width="17"
+                                height="8"
+                                viewBox="0 0 17 8"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 7H16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M1 1H16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </label>
+                    </div>
+
+                    <!-- Overlay -->
+                    <label for="menu-checkbox" class="menu-overlay"></label>
+
+                    <!-- Menu drawer -->
+                    <div class="menu-drawer">
+                        <!-- Logo -->
+                        <a href="#">
+                            <img src="./assets/icon/logo-mobile.svg" alt="" />
+                        </a>
+
+                        <!-- Navigation -->
+                        <nav class="navbar">
+                            <ul class="navbar__list navbar__list-mobile">
+                                <li class="navbar-item">
+                                    <a
+                                        href="#projects"
+                                        class="navbar-item__link navbar-item__link--active"
+                                    >
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a
+                                        href="#journey"
+                                        class="navbar-item__link"
+                                    >
+                                        Journey
+                                    </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a
+                                        href="#service"
+                                        class="navbar-item__link"
+                                    >
+                                        Service
+                                    </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a
+                                        href="#contact"
+                                        class="navbar-item__link"
+                                    >
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <!-- Main -->
         <main>
             <!-- Hero -->
             <section class="hero">
+                <img
+                    src="./assets/icon/hero__deco-02.svg"
+                    alt=""
+                    class="hero__deco-content"
+                />
                 <div class="container">
                     <div class="row">
                         <div class="hero__inner">
@@ -188,7 +299,7 @@
                                 <h1 class="hero__heading">
                                     An Interactive Designer
                                 </h1>
-                                <p class="section-desc hero__desc">
+                                <p class="section-desc hero__desc center">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
@@ -225,11 +336,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img
-                                    src="./assets/icon/hero__deco-02.svg"
-                                    alt=""
-                                    class="hero__deco-content"
-                                />
                             </div>
                         </div>
                     </div>
@@ -345,7 +451,7 @@
             </section>
 
             <!-- Service -->
-            <section class="service">
+            <section id="service" class="service">
                 <div class="container">
                     <div class="service__inner">
                         <h2 class="section-heading service__heading">
@@ -357,7 +463,9 @@
                             solutions.
                         </p>
                         ``
-                        <div class="row row-cols-lg-3">
+                        <div
+                            class="service__list row row-cols-lg-3 row-cols-1 no-wrap"
+                        >
                             <!-- Card item 1 -->
                             <div class="col">
                                 <div class="service-item">
@@ -438,12 +546,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="controls hide-on-pc">
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer dot--active">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Project -->
-            <section class="project">
+            <section id="projects" class="project">
                 <div class="container">
                     <div class="project__inner">
                         <div class="project__row">
@@ -457,7 +576,7 @@
                             </p>
                         </div>
                         <div class="project__list">
-                            <div class="row row-cols-2">
+                            <div class="row row-cols-lg-2 row-cols-1">
                                 <!-- Project item 1 -->
                                 <div class="col">
                                     <div class="project-item">
@@ -870,21 +989,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="review__controls">
-                            <div class="review__dot-outer">
-                                <div class="review__dot-inner"></div>
+                        <div class="controls">
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
                             </div>
-                            <div class="review__dot-outer">
-                                <div class="review__dot-inner"></div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
                             </div>
-                            <div class="review__dot-outer review__dot--active">
-                                <div class="review__dot-inner"></div>
+                            <div class="dot-outer dot--active">
+                                <div class="dot-inner"></div>
                             </div>
-                            <div class="review__dot-outer">
-                                <div class="review__dot-inner"></div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
                             </div>
-                            <div class="review__dot-outer">
-                                <div class="review__dot-inner"></div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
                             </div>
                         </div>
                     </div>
@@ -892,7 +1011,7 @@
             </section>
 
             <!--  Frequently Asked Questions -->
-            <section class="faq">
+            <section id="journey" class="faq">
                 <div class="container">
                     <h2 class="section-heading faq__heading">
                         A few questions clients normally ask me
@@ -902,7 +1021,9 @@
                         <div class="faq-item">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
-                                    What is your hourly rate?
+                                    <label for="question-1">
+                                        What is your hourly rate?
+                                    </label>
                                 </h3>
                                 <p class="faq-item__answer">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -929,7 +1050,9 @@
                         <div class="faq-item">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
-                                    What type of projects do you take on?
+                                    <label for="question-2">
+                                        What type of projects do you take on?
+                                    </label>
                                 </h3>
                                 <p class="faq-item__answer">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -956,7 +1079,9 @@
                         <div class="faq-item">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
-                                    How do you charge for projects ?
+                                    <label for="question-3">
+                                        How do you charge for projects ?
+                                    </label>
                                 </h3>
                                 <p class="faq-item__answer">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -983,7 +1108,9 @@
                         <div class="faq-item">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
-                                    What time-zone do you work in?
+                                    <label for="question-4">
+                                        What time-zone do you work in?
+                                    </label>
                                 </h3>
                                 <p class="faq-item__answer">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -1010,7 +1137,9 @@
                         <div class="faq-item">
                             <div class="faq-item__body">
                                 <h3 class="faq-item__question">
-                                    How often can we communicate?
+                                    <label for="question-5">
+                                        How often can we communicate?
+                                    </label>
                                 </h3>
                                 <p class="faq-item__answer">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -1050,7 +1179,7 @@
                         </p>
                         <a href="#!" class="gallery__tag">@interaction_arif</a>
                         <div class="gallery__list">
-                            <div class="row row-cols-lg-3">
+                            <div class="row row-cols-lg-3 row-cols-1 no-wrap">
                                 <div class="gallery-item">
                                     <img
                                         src="./assets/img/gallery__img-01.png"
@@ -1072,6 +1201,24 @@
                                         class="gallery-item__img"
                                     />
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="controls hide-on-pc">
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer dot--active">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="dot-outer">
+                                <div class="dot-inner"></div>
                             </div>
                         </div>
                     </div>
@@ -1117,7 +1264,9 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
             <div class="footer__container">
                 <div class="footer__content">
                     <div class="inner footer__inner">
@@ -1139,7 +1288,7 @@
                         </div>
 
                         <!-- Logo -->
-                        <a href="/">
+                        <a class="logo" href="#">
                             <img src="./assets/icon/logo.svg" alt="Portfolio" />
                         </a>
 
@@ -1182,15 +1331,18 @@
                         </nav>
                     </div>
                 </div>
+
                 <div class="footer__row">
                     <p class="footer__copy-right">
                         ©interactiveArif 2021. All rights reserved.
                     </p>
                     <div class="footer__privacy">
-                        <a href="#!" class="footer__link">Privacy Policy</a>
-                        <a href="#!" class="footer__link">
-                            Terms of Conditions
-                        </a>
+                        <div class="footer-privacy__inner">
+                            <a href="#!" class="footer__link">Privacy Policy</a>
+                            <a href="#!" class="footer__link">
+                                Terms of Conditions
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

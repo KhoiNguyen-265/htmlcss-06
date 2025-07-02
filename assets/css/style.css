@@ -33,11 +33,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .btn {
     --height: 62px;
 
@@ -80,6 +75,10 @@ a {
     -webkit-line-clamp: var(--line);
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.hide-on-pc {
+    display: none;
 }
 
 /* Header */
@@ -190,6 +189,7 @@ a {
 
 /* Hero */
 .hero {
+    position: relative;
     padding-top: 44px;
     background: #fbfaff;
     overflow: hidden;
@@ -206,7 +206,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    max-width: 514px;
+    width: 514px;
 }
 
 .hero__img {
@@ -219,8 +219,7 @@ a {
 
 .hero__img-deco {
     position: absolute;
-    top: -130px;
-    left: -256px;
+    bottom: 0;
 }
 
 .hero__content {
@@ -289,8 +288,8 @@ a {
 
 .hero__deco-content {
     position: absolute;
-    left: 333px;
-    bottom: -40px;
+    bottom: 0;
+    right: 0;
 }
 
 /* Company */
@@ -470,7 +469,7 @@ a {
 }
 
 .project-item__desc {
-    --line: 2;
+    --line: 3;
 
     margin-top: 10px;
     max-width: 220px;
@@ -654,6 +653,7 @@ a {
 /* Review */
 .review {
     margin-top: -323px;
+    /* margin-top: calc(-1 * 25%); */
     padding: 473px 0 75px;
     background: #fbfaff;
 }
@@ -734,7 +734,7 @@ a {
     line-height: 1.81;
 }
 
-.review__controls {
+.controls {
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -742,7 +742,7 @@ a {
     column-gap: 15px;
 }
 
-.review__dot-inner {
+.dot-inner {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -750,12 +750,12 @@ a {
     transition: 0.3s;
 }
 
-.review__dot-inner:hover {
+.dot-inner:hover {
     background: var(--primary-color);
     cursor: pointer;
 }
 
-.review__dot--active {
+.dot--active {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -765,7 +765,7 @@ a {
     border: 1px solid var(--primary-color);
 }
 
-.review__dot--active .review__dot-inner {
+.dot--active .dot-inner {
     cursor: default;
     width: 12px;
     height: 12px;
@@ -783,6 +783,7 @@ a {
 
 .faq__list {
     width: 1010px;
+    max-width: 100%;
     margin-top: 80px;
 }
 
@@ -829,6 +830,7 @@ a {
     height: 50px;
     border-radius: 50%;
     border: 2px solid rgb(8, 4, 21, 0.2);
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -1007,6 +1009,11 @@ a {
     display: flex;
     align-items: center;
     column-gap: 13px;
+}
+
+.footer-privacy__inner {
+    display: flex;
+    column-gap: 16px;
 }
 
 .footer__link:first-child {
