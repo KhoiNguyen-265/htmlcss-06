@@ -98,7 +98,6 @@ a {
 .inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 1330px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
@@ -151,8 +150,13 @@ a {
     width: 100%;
 }
 
+.logo-pc {
+    margin-left: 357px;
+}
+
 .navbar__list {
     display: flex;
+    margin-left: 200px;
 }
 
 .navbar-item__link {

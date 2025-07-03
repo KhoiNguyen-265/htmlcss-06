@@ -258,6 +258,18 @@
         width: 100%;
     }
 
+    .about-item:first-child {
+        order: 2;
+    }
+
+    .about-item:nth-child(2) {
+        order: 1;
+    }
+
+    .about-item:last-child {
+        order: 3;
+    }
+
     .about__img {
         height: auto;
     }
@@ -265,6 +277,10 @@
     .review {
         margin-top: calc(-1 * 20%);
         padding: 315px 0 75px;
+    }
+
+    .faq-item__body {
+        padding-left: 0;
     }
 
     .faq-item__right {
@@ -537,7 +553,7 @@
 
     .faq-item:has(.faq-item__check:checked) .faq-item__answer {
         margin-top: 15px;
-        padding-bottom: calc(10% + 50px);
+        padding-bottom: calc(10%);
     }
 
     .review-item__quote {
@@ -609,5 +625,19 @@
     .project-item__thumb {
         width: 122px;
         height: 93px;
+    }
+
+    .about__img {
+        width: 100%;
+        height: 276px;
+    }
+
+    .about__play-video svg {
+        width: 10.41px;
+        height: 12.49px;
+    }
+
+    .faq-item:has(.faq-item__check:checked) .faq-item__answer {
+        padding-bottom: 25%;
     }
 }
